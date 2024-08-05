@@ -109,7 +109,7 @@ class _NotesPageState extends State<NotesPage> {
         backgroundColor: Colors.transparent,
       ),
 
-      drawer: MyDrawer(),
+      drawer: const MyDrawer(),
 
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
@@ -141,14 +141,14 @@ class _NotesPageState extends State<NotesPage> {
                     ),
                     trailing: Row(
                       mainAxisSize: MainAxisSize.min,
-            
+                  
                       children: [
                         // edit button
                         IconButton(
                           onPressed: () => updateNote(note),
                           icon: const Icon(Icons.edit),
                         ),
-            
+                  
                         // delete button
                         IconButton(
                           onPressed: () => deleteNote(note.id),
